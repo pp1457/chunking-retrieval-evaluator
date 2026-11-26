@@ -8,8 +8,7 @@ def load_document(filename: str) -> list[Document]:
     loader = MarkdownHeaderTextSplitter(
         headers_to_split_on=[
             ("#", "Header 1"),
-        ],
-        return_each_line=True
+        ]
     )
     print("Splitted with Markdown Headers")
     return loader.split_text(md_text)

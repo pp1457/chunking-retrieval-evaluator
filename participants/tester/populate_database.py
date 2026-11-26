@@ -3,7 +3,7 @@ from langchain.schema.document import Document
 from get_embedding_function import get_embedding_function
 from langchain_chroma import Chroma
 from mupdf_loader import load_document
-from chunkers.semantic import split_documents
+from chunkers.by_token import split_documents
 from dotenv import load_dotenv
 from os import environ
 

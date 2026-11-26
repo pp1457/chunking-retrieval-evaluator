@@ -70,7 +70,8 @@ def calulate_score():
                 print("\nRelevance: ")
                 print(relevance)
 
-                if relevance[0] >= 0.5 and relevance[1] >= 0.5:
+                # if relevance[0] + relevance[1] >= 0.65:
+                if relevance[0] >= 0.35 and relevance[1] >= 0.35:
                     is_relevant = True
                     break
 
